@@ -12,7 +12,7 @@ This project supports creating, viewing, and deleting leads through REST APIs.
 ✅ Delete leads by ID
 ✅ Automatic request validation using Pydantic
 ✅ Interactive Swagger API documentation
-✅ Clean beginner-friendly project structure
+
 
 ---
 
