@@ -1,12 +1,16 @@
+import os
 import mysql.connector
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def get_connection():
     return mysql.connector.connect(
-        host = '40eqhe.h.filess.io',
-        user = 'lead_management_bicycledug',
-        password = '08beb0d3dce84b0122f6b8f51adb5f47d1489a7a',
-        database = 'lead_management_bicycledug',
-        port = 3306
+        host = os.getenv("DB")
+        user = os.getenv("User")
+        password = os.getenv("DB_psswrd")
+        database = os.getenv("DB_url")
+        port = os.getenv("DB_port")
         
     )
     
